@@ -32,7 +32,10 @@ public class PlayerService {
      * Add a new player.
      */
     public Player addPlayer(Player player) {
-        return playerRepository.save(player);
+        if (player != null) {
+            return playerRepository.save(player);
+        }
+        return null;
     }
 
     /**
