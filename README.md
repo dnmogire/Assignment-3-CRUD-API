@@ -1,57 +1,33 @@
-# Manchester United Player API
+# Assignment 4 - MVC Web App
 
-A RESTful CRUD API for Manchester United football players built with Spring Boot, Spring Data JPA, and PostgreSQL.
+A full stack web application built on top of the Assignment 3 CRUD API. This app uses Spring Boot with FreeMarker for server-side rendering and a PostgreSQL database hosted on Neon.
 
----
+## Features
 
-## Installation
+- View all Manchester United players in a gallery
+- View detailed profile for each player
+- Add a new player using a form
+- Edit an existing player
+- Delete a player
+- Filter players by position
+- Search players by name
+
+## Technologies Used
+
+- Java / Spring Boot
+- Spring Data JPA / Hibernate
+- PostgreSQL on Neon
+- FreeMarker Templates
+- HTML / CSS
+
+## How to Run
 
 1. Clone the repository
-2. Set up a PostgreSQL database on Neon
-3. Add your connection details to `application.properties`
-4. Run the app:
-```
-./mvnw spring-boot:run
-```
+2. Open the project in VS Code
+3. Update `src/main/resources/application.properties` with your database credentials
+4. Run the app with `./mvnw spring-boot:run`
+5. Open `http://localhost:8080/mvc/players` in your browser
 
----
+## MVC Demo Video
 
-## API Endpoints
-
-### Get All Players
-`GET /players`
-
-### Get Player by ID
-`GET /players/{playerId}`
-
-### Add a Player
-`POST /players`
-```json
-{
-  "name": "Bruno Fernandes",
-  "description": "Creative midfielder and captain.",
-  "position": "Midfielder",
-  "jerseyNumber": 8,
-  "nationality": "Portuguese",
-  "age": 30,
-  "marketValue": 60.0
-}
-```
-
-### Update a Player
-`PUT /players/{playerId}`
-
-### Delete a Player
-`DELETE /players/{playerId}`
-
-### Get Players by Position
-`GET /players/position/{position}`
-
-### Search Players by Name
-`GET /players/search?name={substring}`
-
----
-
-## Demo Video
-
-https://uncg-my.sharepoint.com/:v:/g/personal/dnmogire_uncg_edu/IQBu-SfbK7GuTbqMK98Rpwm-AU8blrp1MHDi0NUFvS139XU?e=YtsfkB 
+[Watch Demo](https://uncg-my.sharepoint.com/:v:/g/personal/dnmogire_uncg_edu/IQA8XP43yEyuQ5f-MXTmk1YNAc-d-48_GfxCmz8YPlXwask?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=n5gHEy)
